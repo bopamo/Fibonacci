@@ -11,4 +11,4 @@ install:
 - sudo apt-get install -qq gcc-5
 - export CC="gcc-5"
 
-script: "bash -c ./build.sh"
+script: "sudo bash -c ./build.sh"
