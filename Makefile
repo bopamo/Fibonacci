@@ -1,10 +1,10 @@
 CFLAGS  = -g -Wall -W -Wextra -pedantic
-LDFLAGS = -lCppUTest -lCppUTestExt
+LD_LIBRARIES = -lCppUTest -lCppUTestExt
 
 all: fib
 
 fib: test.o
-	$(CPP) $(CFLAGS) $(LDFLAGS) test.o -o fib
+	$(CPP) $(CFLAGS) test.o -o fib $(LD_LIBRARIES)
 
 fib.o: fib.c
 	$(CC) $(CFLAGS) -c fib.c
