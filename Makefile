@@ -1,4 +1,3 @@
-CPP	= g++
 CFLAGS  = -g -Wall -W -Wextra -pedantic
 LDFLAGS = -lCppUTest -lCppUTestExt
 
