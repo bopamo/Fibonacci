@@ -25,7 +25,7 @@ main.o: main.c
 
 
 test:
-	./fib || exit 1
+	./fib -v || exit 1
 
 clean:
 	@echo "clean..."
