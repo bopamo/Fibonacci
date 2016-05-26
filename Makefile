@@ -1,7 +1,7 @@
 CFLAGS  = -g -Wall -W -Wextra -pedantic
 LDFLAGS = -lCppUTest -lCppUTestExt
 
-default: fib
+all: fib
 
 fib: test.o
 	$(CPP) $(CFLAGS) $(LDFLAGS) test.o -o fib
