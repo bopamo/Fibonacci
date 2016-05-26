@@ -1,4 +1,4 @@
-language: c
+language: cpp
 
 compiler: gcc
 
@@ -12,6 +12,7 @@ before_install:
 
 install:
 - sudo apt-get install -qq gcc-5
+- sudo apt-get install -qq g++-5
 - sudo apt-get install -qq cpputest
 - export CC="gcc-5"
 
