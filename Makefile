@@ -3,7 +3,7 @@ LDFLAGS = -lCppUTest -lCppUTestExt
 
 default: fib
 
-fib: main.o test.o
+fib: test.o
 	$(CPP) $(CFLAGS) $(LDFLAGS) test.o -o fib
 
 fib.o: fib.c
