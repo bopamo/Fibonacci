@@ -5,12 +5,14 @@ compiler: gcc
 
 before_install:
 - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+# Adding backport ppa for CppUTest installation
+- sudo add-apt-repository -y ppa:bcandrea/backports
 - sudo apt-get update -qq
 
 
 install:
 - sudo apt-get install -qq gcc-5
-- sudo apt-get install cpputest
+- sudo apt-get install -qq cpputest
 - export CC="gcc-5"
 
 before_script:
