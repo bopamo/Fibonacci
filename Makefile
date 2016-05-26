@@ -1,5 +1,9 @@
+CFLAGS  = -g -Wall -W -Wextra -pedantic
+
+default: fib
+
 all:
-	$(CC) -Wall -Wextra -pedantic fib.c -o fib
+	$(CC) $(CFLAGS) fib.c -o fib
 
 test:
 	 ./fib || exit 1
