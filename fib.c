@@ -1,6 +1,6 @@
 /* Fib.c */
 
-#include<stdio.h>
+#include <stdio.h>
 
 main()
 {
